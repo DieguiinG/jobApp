@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+#main-container {
+    background-color: rgb(159, 189, 255);
+    justify-content: space-between;
+    display: flex;
+    border-radius: 10px;
+    margin: 5vh auto;
+    width: 75rem;
+
+}
+
+#register-img {
+    height: 25rem;
+    width: 25rem;
+    padding: 6.25rem;
+
+}
+
+.main-content {
+    height:25rem;
+    width: 25rem;
+
+    background-color: rgb(240, 245, 255);
+    padding: 6.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content h1 {
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    padding-bottom: 2.5rem;
+
+}
+
+.main-content label, input {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-content label {
+    font-family: 'Inter', sans-serif;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.main-content input {
+    height: 0.625rem;
+    border-radius: 0.313rem;
+    border-style: none;
+    padding: 0.313rem;
+    background-color: rgb(215, 228, 255);
+}
+
+#modalidade{
+    margin-bottom: 0.625rem;
+}
+
+option {
+    background-color: rgb(239, 243, 255);
+}
+
+select {
+    background-color: rgb(224, 231, 247);
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+#btn-submit{
+    background-color:  rgb(94, 142, 255);
+    color: white;
+    text-align: center;
+    padding-left: 65px;
+    height: 2.25rem;
+    width: 11.75rem;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1280px) and (max-height: 720px) {
+    #main-container {
+        background-color: rgb(159, 189, 255);
+        justify-content: space-between;
+        display: flex;
+        border-radius: 10px;
+        margin: 5vh auto;
+        width: 50rem;
+        height: 35rem;
+    
+    }
+
+    .main-content {
+        height: 22.5rem;
+       
+  }
+
+  #main-container {
+    background-color: rgb(159, 189, 255);
+    justify-content: space-between;
+    display: flex;
+    border-radius: 10px;
+    margin: 5vh auto;
+    margin-right: 30px;
+    width: 75rem;
+
+}
+
+
+}
