@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=main, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/cadastroVaga.css">
+    <link rel="stylesheet" href="css/cadastroVaga.css" th:ref="@{cadastroVaga/css/.css"}>
     <title>Document</title>
 </head>
 
 <body>
     <div id="main-container">
-        <div class="ilustration"><img src="/img/ilustracoes/register.svg" alt="" id="register-img"></div>
+        <div class="ilustration"><img src="/img/ilustracoes/register.svg" id="register-img" th:attr="src=@{/images/ilustracoes/register.svg},title=#{imgcadastro},alt=#{imgcadastro}" /></div>
         <div class="main-content">
             <h1>Cadastro de vagas</h1>
-            <form action="">
-                <label for="name">Nome da vaga</label>
-                <input type="text" id="name" name="name" required>
+            <form method="post">
+                <label for="nomevaga">Nome da vaga</label>
+                <input type="text" id="nomeVaga" name="nomeVaga" required>
 
                 <label for="name">Area</label>
                 <input type="text" id="area" name="area" required>
 
                 <label for="name">Salário</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="salario" name="salario" required>
 
-                <label for="name">Modalidade</label>
+                <label for="modalidade">Modalidade</label>
                 <select id="modalidade" name="modalidade">
                     <option value="Presencial">Presencial</option>
                     <option value="Home office">Home office</option>
